@@ -4,11 +4,12 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { Index } from '@Pages/index';
 import { GlobalContextProvider } from '@Contexts/Global';
 import { ThemeContextProvider } from '@Contexts/Theme';
+import json from '../../package.json';
 
 export const App: React.FC = () => (
   <GlobalContextProvider>
     <ThemeContextProvider>
-      <BrowserRouter>
+      <BrowserRouter basename={json.homepage}>
         <NavBar />
         <Routes>
           <Route path="/" element={<Index />} />
