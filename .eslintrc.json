@@ -138,6 +138,7 @@
   ],
   "ignorePatterns": [
     "**/*.svg",
-    "**/*.css"
+    "**/*.css",
+    "craco.config.js"
   ]
 }

@@ -1,0 +1,38 @@
+on:
+  push:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install dependencies
+        run: yarn
+      - name: lint
+        run: yarn test:lint
+
+  types:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install dependencies
+        run: yarn
+      - name: types
+        run: yarn test:types
+
+  deploy:
+    needs:
+      - lint
+      - types
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: install dependencies
+        run: yarn
+      - name: build
+        run: yarn build
+      - name: deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.1
+        with:
+          branch: gh-pages
+          folder: build
