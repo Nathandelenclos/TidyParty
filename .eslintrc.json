@@ -1,0 +1,143 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "airbnb",
+    "airbnb-typescript"
+  ],
+  "plugins": [
+    "unused-imports",
+    "react-hooks"
+  ],
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "no-console": 1,
+    "no-plusplus": "off",
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 100,
+        "ignoreComments": true,
+        "ignoreStrings": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "import/no-cycle": "off",
+    "import/prefer-default-export": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.stories.*",
+          "**/.storybook/**/*.*"
+        ],
+        "peerDependencies": true
+      }
+    ],
+    "unused-imports/no-unused-imports": "error",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "ignoreRestSiblings": true
+      }
+    ],
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/interface-name-prefix": "off",
+    "@typescript-eslint/naming-convention": [
+      "error",
+      {
+        "selector": "variable",
+        "format": [
+          "camelCase",
+          "PascalCase",
+          "UPPER_CASE"
+        ]
+      },
+      {
+        "selector": "function",
+        "format": [
+          "camelCase",
+          "PascalCase"
+        ]
+      },
+      {
+        "selector": "typeLike",
+        "format": [
+          "PascalCase",
+          "UPPER_CASE"
+        ]
+      }
+    ],
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "react/self-closing-comp": [
+      "warn",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "react/no-unstable-nested-components": [
+      "error",
+      {
+        "allowAsProps": true
+      }
+    ],
+    "react/style-prop-object": [
+      "error",
+      {
+        "allow": [
+          "FormattedNumber",
+          "FormattedDateParts",
+          "FormattedRelativeTime"
+        ]
+      }
+    ],
+    "react/no-unused-prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": "off",
+    "react/require-default-props": "off",
+    "react/destructuring-assignment": "off",
+    "react/no-array-index-key": "off",
+    "react-hooks/exhaustive-deps": "warn",
+    "jsx-a11y/alt-text": "off"
+  },
+  "overrides": [
+    {
+      "files": [
+        "**/*.test.ts",
+        "**/*.test.js"
+      ],
+      "env": {
+        "jest": true
+      }
+    }
+  ],
+  "ignorePatterns": [
+    "**/*.svg",
+    "**/*.css"
+  ]
+}
