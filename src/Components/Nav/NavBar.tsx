@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from '@Components/Nav/NavLink';
 import { Logo } from '@Components/Logo';
 import { Link } from 'react-router-dom';
+import json from '@Root/package.json';
 
 enum PageNames {
   HOME = 'home',
@@ -73,7 +74,7 @@ export const NavBar: React.FC = () => {
       }}
       >
         <img
-          src="/assets/user-image.jpeg"
+          src={`${json.homepage}/assets/user-image.jpeg`}
           alt="Avatar"
           style={{
             borderRadius: '50%',
