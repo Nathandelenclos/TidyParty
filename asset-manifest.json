@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/TidyParty/static/css/main.dcd61eac.css",
-    "main.js": "/TidyParty/static/js/main.d8668f5a.js",
+    "main.js": "/TidyParty/static/js/main.e16b3514.js",
     "static/js/787.50eaa72e.chunk.js": "/TidyParty/static/js/787.50eaa72e.chunk.js",
     "index.html": "/TidyParty/index.html",
     "main.dcd61eac.css.map": "/TidyParty/static/css/main.dcd61eac.css.map",
-    "main.d8668f5a.js.map": "/TidyParty/static/js/main.d8668f5a.js.map",
+    "main.e16b3514.js.map": "/TidyParty/static/js/main.e16b3514.js.map",
     "787.50eaa72e.chunk.js.map": "/TidyParty/static/js/787.50eaa72e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.dcd61eac.css",
-    "static/js/main.d8668f5a.js"
+    "static/js/main.e16b3514.js"
   ]
 }
