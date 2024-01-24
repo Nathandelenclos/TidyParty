@@ -74,7 +74,7 @@ export const NavBar: React.FC = () => {
       }}
       >
         <img
-          src={`${json.homepage}/assets/user-image.jpeg`}
+          src={`/${json.homepage}/assets/user-image.jpeg`}
           alt="Avatar"
           style={{
             borderRadius: '50%',

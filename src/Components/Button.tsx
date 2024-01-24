@@ -40,7 +40,6 @@ export const Button: React.FC<ButtonProps> = ({
 
   const styles = {
     [ButtonType.PRIMARY]: {
-      borderRadius: '10px',
       color: '#fff',
       backgroundColor: primaryColor,
     },
@@ -69,6 +68,7 @@ export const Button: React.FC<ButtonProps> = ({
     <button
       type="submit"
       style={{
+        borderRadius: '10px',
         ...resetButtonStyles,
         ...styles[type],
         ...sizeStyles[size],
