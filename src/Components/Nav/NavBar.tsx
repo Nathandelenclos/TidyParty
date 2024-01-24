@@ -24,11 +24,6 @@ export const NavBar: React.FC = () => {
       name: PageNames.HOME,
       children: 'Home',
     },
-    {
-      href: '/test',
-      name: PageNames.TEST,
-      children: 'Test',
-    },
   ];
 
   return (
